@@ -4,6 +4,7 @@ class Solution {
 
         for(int i =2; i<=n; i++){
             int total = prev1 + prev2;
+            prev2 = prev1;
             prev1 = total;
             
         }
@@ -12,5 +13,6 @@ class Solution {
         
     }
 }
+
 
 // https://leetcode.com/problems/climbing-stairs/solutions/2902550/daily-leetcoding-challenge-december-day-12/
